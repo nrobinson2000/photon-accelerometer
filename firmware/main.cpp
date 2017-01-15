@@ -1,9 +1,5 @@
 #include "Particle.h"
-
 #include "MDNS.h"
-
-#include <vector>
-
 
 SYSTEM_MODE(MANUAL);
 SYSTEM_THREAD(ENABLED);
