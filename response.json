@@ -5,7 +5,7 @@
   \"az\": \""+String(az)+"\",
   \"roll\": \""+String(roll)+"\",
   \"pitch\": \""+String(pitch)+"\",
-  \"yaw\": \""+String(pitch)+"\",
+  \"yaw\": \""+String(yaw)+"\",
 }
 "
 
