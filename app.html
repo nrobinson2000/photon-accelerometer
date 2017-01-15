@@ -1,0 +1,42 @@
+<html>
+
+<h1>ax=<strong id="ax"></strong></h1>
+
+<h1>ay=<strong id="ay"></strong></h1>
+
+<h1>az=<strong id="az"></strong></h1>
+
+<h1>roll=<strong id="roll"></strong></h1>
+
+<h1>pitch=<strong id="pitch"></strong></h1>
+
+<h1>yaw=<strong id="yaw"></strong></h1>
+
+
+
+<script>
+    function httpGet(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", theUrl, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
+
+
+    function getVals() {
+        var json = httpGet("http://photon.local");
+        obj = JSON.parse(json);
+        document.getElementById("ax").innerHTML = obj.ax;
+        document.getElementById("ay").innerHTML = obj.ay;
+        document.getElementById("az").innerHTML = obj.az;
+        document.getElementById("roll").innerHTML = obj.roll;
+        document.getElementById("pitch").innerHTML = obj.pitch;
+        document.getElementById("yaw").innerHTML = obj.yaw;
+    }
+
+
+    setInterval(getVals, 100);
+</script>
+
+
+<html>
