@@ -10,4 +10,4 @@
 "
 
 
-"{\"ax\": \""+String(ax)+"\",\"ay\": \""+String(ay)+"\",\"az\": \""+String(az)+"\",\"roll\": \""+String(roll)+"\",\"pitch\": \""+String(pitch)+"\",\"yaw\": \""+String(pitch)+"\",}"
+"{\"ax\": \""+String(ax)+"\",\"ay\": \""+String(ay)+"\",\"az\": \""+String(az)+"\",\"roll\": \""+String(roll)+"\",\"pitch\": \""+String(yaw)+"\",\"yaw\": \""+String(pitch)+"\",}"
